@@ -58,7 +58,45 @@
 ## HASIL OUTPUT AKHIR
 ![Screenshot (67)](https://user-images.githubusercontent.com/115771479/228744899-3b91276a-ea63-494e-bc00-396e3c11b5a0.png)
 
-
 - ## Apa maksud dari int (11)? Yang dimaksud int(11) artinya suatu data yang dipakai atau digunakan menggunakan tipe data int atau integer dengan length atau panjang karakter 11.
 
 - ## Ketika kita melihat struktur tabel dengan perintah desc, ada kolom Null yang berisi Yes dan No. Apa maksudnya?  Apabila Null berisi no, maka data tersebut nantinya akan dilakukan pengisian atau penginputan. Sedangkan apabila Null berisi yes, maka artinya data tersebut akan dikosongkan atau tidak dilakukan penginputan.
+
+## 1. Membuat Data Base Lathian1
+![image](https://user-images.githubusercontent.com/115771479/229927909-f167b637-2226-41c0-80ce-e802998dc382.png)
+
+## 2. Membuat Tabel
+- ``CREATE TABLE siswa (nama VARCHAR(100),alamat TEXT);``
+![image](https://user-images.githubusercontent.com/115771479/229928072-d756fe74-cc49-46ac-b96b-2800e1bfdc05.png)
+
+## 3. Menambahkan Kolom Di Awal
+- ``ALTER TABLE siswa ADD COLUMN id INT FIRST;``
+![image](https://user-images.githubusercontent.com/115771479/229929010-a24d5d02-8e78-4757-8d0b-c57901582c6d.png)
+
+## 4. Mengubah Nama Kolom
+- ``ALTER TABLE siswa CHANGE keterangan kelas VARCHAR(10);``
+![image](https://user-images.githubusercontent.com/115771479/229929193-ed8f6bd3-9cf0-4487-916a-eaed4b66e454.png)
+
+## 5. Mengubah Tipe Data
+- ``VARCHAR(10) menjadi VARCHAR(11)``
+![image](https://user-images.githubusercontent.com/115771479/229929345-d0561a80-8933-4aec-8542-ecdc855aefda.png)
+
+## 6. Menghapus Kolom
+- ``ALTER TABLE siswa DROP COLUMN kelas;``
+![image](https://user-images.githubusercontent.com/115771479/229929478-5b4f1e01-b7fd-41fc-8146-963d3e4fadbf.png)
+
+## 7. Menambahkan Primary Key ID
+- ``ALTER TABLE siswa ADD PRIMARY KEY(id);``
+![image](https://user-images.githubusercontent.com/115771479/229929640-f838078a-a4e7-4aaa-8e50-aaf984c144f6.png)
+
+## 8. Menghapus Primary Key
+- ``ALTER TABLE siswa DROP PRIMARY KEY;``
+![image](https://user-images.githubusercontent.com/115771479/229930034-34a80d69-63b8-4cc5-87fb-7fabfaef4c9b.png)
+
+## 9. Menambahkan Constraint
+- ``ALTER TABLE siswa ADD CONSTRAINT PK_siswa PRIMARY KEY(id);``
+![image](https://user-images.githubusercontent.com/115771479/229930080-0dd58949-f2fe-4daf-861e-ecb635edb46e.png)
+
+## 10. Menghapus Constraint Primary Key juga Bisa Seperti Ini:
+- ``ALTER TABLE siswa DROP PRIMARY KEY;``
+![image](https://user-images.githubusercontent.com/115771479/229930346-04e3844a-4a2e-4b16-a341-0033fcbf862f.png)
